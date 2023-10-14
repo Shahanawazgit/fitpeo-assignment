@@ -1,0 +1,139 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 1.6rem;
+  transition: all 0.3s ease;
+  background: #040450;
+  color: #fff;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  font-weight: 600;
+  font-size: 22px;
+  gap: 0.5rem;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-left: -60px;
+}
+
+.menu {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 5px 10px;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.menuItem .itemHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuItem .itemHeading > :nth-child(1) {
+  font-size: 26px;
+}
+
+.menuItem.active > :nth-child(2) {
+  display: none;
+}
+
+.menuItem:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.menu #user {
+  margin-top: 15rem;
+  border-radius: 5px;
+  margin-inline: -10px;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.user img {
+  width: 35px;
+  height: 35px;
+}
+
+.user .userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.user .userInfo .userName {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user .userInfo .userDesignation {
+  color: #dadada;
+  font-size: 12px;
+}
+
+.user > svg {
+  margin-left: 40px;
+}
+
+/* ********** Responsiveness ********** */
+/* @media screen and (max-width: 1200px) {
+  .menu {
+    gap: 2rem;
+  }
+
+  .logo {
+    display: none;
+  }
+} */
+
+/* ********** Mobile Responsiveness ********** */
+/* @media screen and (max-width: 600px) {
+  .sidebar {
+    position: fixed;
+    z-index: 9;
+    background: #ffe0e0;
+    width: 55%;
+    padding-right: 1rem;
+    height: 100%;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .bars {
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    z-index: 9;
+    background: #ffe0e0;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+  }
+} */
