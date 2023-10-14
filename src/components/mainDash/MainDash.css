@@ -1,0 +1,41 @@
+.mainDash {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.6rem;
+}
+
+.mainDash header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainDash header .left {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.mainDash header .right {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.mainDash header .right input {
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+.mainDash header .right input::placeholder {
+  color: gray;
+  font-weight: 500;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
