@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   padding-top: 1.6rem;
+  overflow: auto;
+}
+
+.mainDash::-webkit-scrollbar {
+  display: none;
 }
 
 .mainDash header {

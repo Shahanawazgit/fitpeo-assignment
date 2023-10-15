@@ -3,6 +3,7 @@ import './MainDash.css';
 import { BsSearch } from 'react-icons/bs';
 import Overview from './../overview/Overview';
 import Customers from './../customers/Customers';
+import ProductSell from '../productSell/ProductSell';
 
 const MainDash = () => {
   return (
@@ -22,6 +23,9 @@ const MainDash = () => {
         <div className="customers">
           <Customers />
         </div>
+      </section>
+      <section className="bottom">
+        <ProductSell />
       </section>
     </div>
   );

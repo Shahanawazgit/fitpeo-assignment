@@ -12,7 +12,7 @@ const Customers = () => {
         <div className="CircularProgressbarWithChildren">
           <CircularProgressbarWithChildren
             value={65}
-            text="65%"
+            text={`65%`}
             styles={buildStyles({
               pathColor: '#7549ea',
               trailColor: '#eee',
