@@ -3,11 +3,11 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 1.6rem;
+  padding-block: 1.6rem;
   transition: all 0.3s ease;
   background: #040450;
   color: #fff;
-  height: 100vh;
+  height: 100%;
 }
 
 .logo {
@@ -64,9 +64,10 @@
 }
 
 .menu #user {
-  margin-top: 15rem;
+  bottom: 50px;
   border-radius: 5px;
   margin-inline: -10px;
+  position: absolute;
 }
 
 .user {
@@ -101,39 +102,37 @@
   margin-left: 40px;
 }
 
-/* ********** Responsiveness ********** */
-/* @media screen and (max-width: 1200px) {
-  .menu {
-    gap: 2rem;
-  }
+.bars {
+  display: none;
+  position: fixed;
+  top: 25px;
+  font-size: 22px;
+  z-index: 9;
+  color: #fff;
+  background: #040450;
+  padding: 5px 10px 0 10px;
+  border-radius: 5px;
+}
 
-  .logo {
-    display: none;
+/* ********** Responsiveness ********** */
+@media screen and (max-width: 1250px) {
+  .menu {
+    gap: 0.6rem;
   }
-} */
+}
 
 /* ********** Mobile Responsiveness ********** */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .sidebar {
     position: fixed;
-    z-index: 9;
-    background: #ffe0e0;
-    width: 55%;
-    padding-right: 1rem;
+    left: 0;
+    z-index: 8;
+    background: #040450;
+    width: 15rem;
     height: 100%;
   }
 
-  .logo {
-    display: flex;
-  }
-
   .bars {
-    display: flex;
-    position: fixed;
-    top: 2rem;
-    z-index: 9;
-    background: #ffe0e0;
-    padding: 10px;
-    border-radius: 0 10px 10px 0;
+    display: block;
   }
-} */
+}

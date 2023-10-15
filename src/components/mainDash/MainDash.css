@@ -1,7 +1,7 @@
 .mainDash {
   display: flex;
   flex-direction: column;
-  padding-top: 1.6rem;
+  padding-block: 1.6rem;
   overflow: auto;
 }
 
@@ -41,7 +41,22 @@
 
 .mainDash .middle {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
-  gap: 40px;
+  gap: 20px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1505px) {
+  .mainDash .middle {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainDash header {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

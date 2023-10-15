@@ -9,7 +9,7 @@
   background: #dadada;
   display: grid;
   grid-template-columns: 15.5rem auto;
-  height: 100vh;
+  height: 100%;
   gap: 50px;
   padding-right: 50px;
   font-family: 'Inter', sans-serif;
@@ -25,20 +25,29 @@ a:-webkit-any-link {
 }
 
 /* ********** Responsiveness ********** */
-@media screen and (max-width: 1200px) {
-  .AppGlass {
-    grid-template-columns: 10% 50% auto;
+@media screen and (max-width: 1250px) {
+  .App {
+    grid-template-columns: 20% auto;
     overflow-y: scroll;
+    gap: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .App {
+    grid-template-columns: 15rem auto;
   }
 }
 
 /* ********** Mobile Responsiveness ********** */
-@media screen and (max-width: 600px) {
-  .AppGlass {
+@media screen and (max-width: 768px) {
+  .App {
     grid-template-columns: 1fr;
+    padding: 0 10px;
   }
 
-  .AppGlass::-webkit-scrollbar {
+  .App::-webkit-scrollbar {
     display: none;
   }
 }

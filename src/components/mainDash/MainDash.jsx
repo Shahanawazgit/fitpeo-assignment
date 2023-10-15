@@ -17,12 +17,8 @@ const MainDash = () => {
       </header>
       <Cards />
       <section className="middle">
-        <div className="overview">
-          <Overview />
-        </div>
-        <div className="customers">
-          <Customers />
-        </div>
+        <Overview />
+        <Customers />
       </section>
       <section className="bottom">
         <ProductSell />

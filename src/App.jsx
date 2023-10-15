@@ -12,6 +12,11 @@ function App() {
           <Routes>
             <Route exact path="/" element={<MainDash />} />
             <Route exact path="/Dashboard" element={<MainDash />} />
+            <Route exact path="/Product" element={<MainDash />} />
+            <Route exact path="/Customers" element={<MainDash />} />
+            <Route exact path="/Income" element={<MainDash />} />
+            <Route exact path="/Promote" element={<MainDash />} />
+            <Route exact path="/Help" element={<MainDash />} />
           </Routes>
         </div>
       </BrowserRouter>
