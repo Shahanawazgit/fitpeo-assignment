@@ -86,7 +86,18 @@
   color: gray !important;
 }
 
+.css-1bigob2 {
+  border-bottom: 2px solid rgba(224, 224, 224, 1) !important;
+  padding: 16px 0 !important;
+  color: gray !important;
+}
+
 .css-1ex1afd-MuiTableCell-root {
+  border-bottom: none !important;
+  padding: 16px 0 !important;
+}
+
+.css-q34dxg {
   border-bottom: none !important;
   padding: 16px 0 !important;
 }
