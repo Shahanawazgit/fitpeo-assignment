@@ -88,15 +88,6 @@
 }
 
 /* ********** Responsiveness ********** */
-@media screen and (max-width: 1200px) {
-  .table {
-    width: 170%;
-    margin-top: 1rem;
-    padding-bottom: 1.5rem;
-  }
-}
-
-/* ********** Mobile Responsiveness ********** */
 @media screen and (max-width: 850px) {
   .productSell .up {
     flex-direction: column;
