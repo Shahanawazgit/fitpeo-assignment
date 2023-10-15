@@ -15,14 +15,14 @@ const MainDash = () => {
         </div>
       </header>
       <Cards />
-      <div className="middle">
+      <section className="middle">
         <div className="overview">
           <Overview />
         </div>
         <div className="customers">
           <Customers />
         </div>
-      </div>
+      </section>
     </div>
   );
 };
